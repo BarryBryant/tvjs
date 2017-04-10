@@ -37,7 +37,9 @@
           data='{"title": "{{title}}", "text": "{{description}}"}'>{{description}}</description>
         <text>{{language}}</text>
         <row>
-          <buttonLockup type="play">
+          <buttonLockup presentation="playVideo"
+                        data='{"title": "{{title}}", "description": "{{description}}",
+                             "videoURL": "{{videoURL}}", "subtitle": "{{presenter}}"}'>
             <badge src="resource://button-play" />
             <title>Play</title>
           </buttonLockup>
