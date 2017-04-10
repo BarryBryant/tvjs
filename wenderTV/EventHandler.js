@@ -21,6 +21,7 @@
  */
 
 class EventHandler {
+
     constructor(presenter, dataController) {
         this._presenter = presenter;
         this._dataController = dataController;
@@ -49,7 +50,7 @@ class EventHandler {
     handlePlaybackUpdates(event) {
         var url = event.target.currentMediaItem.url;
         var pgoress = event.time;
-        console.log(`Progress: ${progress} :: URL: ${url}`);
+        this._dataController.saveProgressForVideoAtURL(url, progress);
     }
 
 }

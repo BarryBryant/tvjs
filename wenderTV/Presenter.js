@@ -121,6 +121,8 @@ class Presenter {
             eventHandler.handlePlaybackUpdates,
             {interval: 5});
 
+        video.resumeTime = data.resumeTime;
+
         player.play();
     }
 
